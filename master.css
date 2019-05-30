@@ -1,0 +1,72 @@
+*{
+margin:0;
+padding:0;
+}
+/*settaggi per il mio blocco generale
+spostero tutto il contenuto di questo a 25% da sinistra
+e 25%da destra*/
+.setting{
+height:100vh;
+width:100vh;
+position:absolute;
+left:25vw;
+right:25vw;
+}
+/*settaggi per il mio header altezza
+massima 30%*/
+header{
+background-color:red;
+height:30%;
+}
+/*settaggi blocco contenente i widget e la mia
+sezione principale*/
+/*altezza massima 50%;*/
+.clearfix{
+height:50%;
+margin-top:4px;;
+margin-bottom:6px;
+}
+/*setto widget di sinistra*/
+.sx{
+background-color:green;
+height:80%;
+float:left;
+width:21%;
+margin-right:4px;
+margin-top:2px;
+margin-bottom:3px;
+
+}
+/*setto la mia sezione principale*/
+section{
+background-color:black;
+height:70%;
+float:left;
+width:45%;
+margin-left:4%;
+}
+/*setto i widget di destra*/
+.destra{
+background-color: yellow;
+height:31%;
+float:right;
+width:25%;
+margin-top:2px;
+margin-bottom:3px;
+}
+
+
+}
+/*setting clearfix uso di both*/
+.clearfix::after{
+content: " ";
+display: table;
+clear:both;
+}
+/*setting del mio footer*/
+footer{
+background-color:orange;
+height:15%;
+margin-top:4px;
+margin-bottom:5px;
+}
