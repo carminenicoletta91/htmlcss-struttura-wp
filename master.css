@@ -5,18 +5,26 @@ padding:0;
 /*settaggi per il mio blocco generale
 spostero tutto il contenuto di questo a 25% da sinistra
 e 25%da destra*/
+body{
+background-image:url("sfondo.jpg");
+position:relative;
+background-size: cover;
+height:100vh;
+width:100vw;
+}
 .setting{
+position:absolute;
 height:100vh;
 width:100vh;
-position:absolute;
 left:25vw;
 right:25vw;
 }
 /*settaggi per il mio header altezza
 massima 30%*/
 header{
-background-color:red;
+position:relative;
 height:30%;
+width:100%;
 }
 /*settaggi blocco contenente i widget e la mia
 sezione principale*/
@@ -28,7 +36,7 @@ margin-bottom:6px;
 }
 /*setto widget di sinistra*/
 .sx{
-background-color:green;
+background-color:white;
 height:80%;
 float:left;
 width:21%;
@@ -39,7 +47,7 @@ margin-bottom:3px;
 }
 /*setto la mia sezione principale*/
 section{
-background-color:black;
+background-color:white;
 height:70%;
 float:left;
 width:45%;
@@ -47,7 +55,7 @@ margin-left:4%;
 }
 /*setto i widget di destra*/
 .destra{
-background-color: yellow;
+background-color: white;
 height:31%;
 float:right;
 width:25%;
@@ -56,7 +64,7 @@ margin-bottom:3px;
 }
 
 
-}
+
 /*setting clearfix uso di both*/
 .clearfix::after{
 content: " ";
@@ -65,8 +73,29 @@ clear:both;
 }
 /*setting del mio footer*/
 footer{
-background-color:orange;
+background-color:white;
 height:15%;
 margin-top:4px;
 margin-bottom:5px;
+}
+
+
+.imagetitle{
+  position:relative;
+  height:80%;
+  width:100%;
+  background-image:url("temaheader.jpg");
+  background-size: cover;
+  border:solid white 6px;
+  box-sizing: border-box;
+
+}
+#menu{
+background-color:gray;
+background-size:cover;
+position:absolute;
+height:19%;
+width:100%;
+margin-top:1px;
+
 }
